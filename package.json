@@ -1,0 +1,35 @@
+{
+  "name": "jouliet-morales-p1",
+  "version": "1.0.0",
+  "description": "jouliet-morales-p1",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm server.js",
+    "server": "nodemon -r esm server.js",
+    "clientapp": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"  \"npm run clientapp\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itdev161/Jouliet-Morales-p1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itdev161/Jouliet-Morales-p1/issues"
+  },
+  "homepage": "https://github.com/itdev161/Jouliet-Morales-p1#readme"
+}
